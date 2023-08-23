@@ -39,14 +39,14 @@
                     <li><a href="/company/contribution.jsp">사회공헌</a></li>
                 </ul>
             </li>
-            <li class="item2">
+            <%--<li class="item2">
                 <a href="/board/boardList.jsp" class="dp1">윜 News</a>
                 <ul class="sub">
                     <li><a href="/board/boardList.jsp">공지사항</a></li>
                     <li><a href="/masscom/masscomList.jsp">언론보도</a></li>
                 </ul>
-            </li>
-            <li class="item3">
+            </li>--%>
+            <li class="item2">
                 <a href="/business/weekly.jsp" class="dp1">사업영역</a>
                 <ul class="sub">
                     <li><a href="/business/weekly.jsp">위클리</a></li>
@@ -54,14 +54,15 @@
                     <li><a href="/business/weekmarket.jsp">윜마켓</a></li>
                 </ul>
             </li>
-            <li class="item4">
-                <a href="/faq/faqList.jsp" class="dp1">고객만족센터</a>
+            <li class="item3">
+                <a href="/faq/faqList.jsp" class="dp1">고객센터</a>
                 <ul class="sub">
-                    <li><a href="/faq/faqList.jsp">자주하는질문</a></li>
+                    <li><a href="/board/boardList.jsp">공지사항</a></li>
+                    <li><a href="/faq/faqList.jsp">자주하는 질문</a></li>
                     <li><a href="/qna/qnaList.jsp">1:1 문의</a></li>
                 </ul>
             </li>
-            <li class="item5">
+            <li class="item4">
                 <a href="/weekcrew/apply.jsp" class="dp1">인재채용</a>
                 <ul class="sub">
                     <li><a href="/weekcrew/apply.jsp">윜크루 되기</a></li>
