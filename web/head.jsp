@@ -45,9 +45,9 @@
 <!-- 파비콘 설정 -->
 <!-- 16x16, 24x24, 32x32, 48x48, 64x64, 96x96, 114x114, 128x128, 256x256 등을 활용-->
 <!-- 표준 파비콘 -->
-<link rel="shortcut icon" href="<%=path %>/images/week_fab.ico">
+<link rel="shortcut icon" href="<%=path %>/images/favicon.ico">
 <!-- 애플 계열 모바일 -->
-<link rel="apple-touch-icon-precomposed" href="<%=path %>/images/logo_64.png">
+<link rel="apple-touch-icon-precomposed" href="<%=path %>/images/apple-touch-icon.png">
 <!-- IE 계열 브라우저 -->
 <meta name="msapplication-TileColor" content="#FFFFFF">
 <meta name="msapplication-TileImage" content="<%=path %>/images/logo_48.png">

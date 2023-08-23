@@ -18,10 +18,10 @@ margin: 0 auto; }
 
 .logo { display:block; width:auto; height:50px; float:left; }
 .logo img {
-    margin-left: -110px;
-    margin-top: -20px;
+    margin-left: -90px;
+    margin-top: -10px;
     display: block;
-    width: 205px;
+    width: 160px;
     height: 250%;
 }
 
@@ -39,7 +39,7 @@ margin: 0 auto; }
     line-height: 50px; border-bottom:2px solid #fff;
     text-align: center; background-color: #fffcf2; }
 .gnb .menu li:hover a.dp1 { border-bottom:2px solid #fffcf2;
-    background-color: #996633; color:#fff; }
+    background-color: #8CC63E; color:#fff; }
 .gnb .menu:hover li .sub { visibility: visible; height: 240px; opacity:1; }
 .gnb .menu li .sub li { padding-left:0px; line-height: 34px; clear:both;
     width:180px; }

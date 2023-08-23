@@ -27,7 +27,7 @@
 </div>
 <div class="hd_wrap">
     <a href="/" class="logo">
-        <img src="<%=path8 %>/images/bigWeekLogo.png" alt="윜 로고">
+        <img src="<%=path8 %>/images/kiwe_logo.png" alt="키위 로고">
     </a>
     <nav class="gnb">
         <ul class="menu">
