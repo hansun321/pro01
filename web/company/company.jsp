@@ -22,7 +22,6 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff;}
         .contents { clear:both; height:2450px;
             background-image: url("../images/bg_visual_overview.jpg");
             background-repeat: no-repeat; background-position:center -250px; padding-bottom: 500px;}
@@ -193,7 +192,6 @@
         <section class="page" id="page1">
             <div class="page_wrap">
                 <h2 class="page_tit">윜이란?</h2>
-                <hr>
                 <div class="inner">
                     <div class="btn-group tab-group type3">
                         <a ui-sref="textbook01" ui-sref-opts="{reload: true}" class="button active scroll_move" href="/company/company.jsp">윜이란?</a>
@@ -301,9 +299,7 @@
             </script>
         </section>
     </div>
-    <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
-    </footer>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

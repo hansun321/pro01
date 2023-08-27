@@ -72,7 +72,7 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
+
         .contents { clear:both; min-height:1800px;
             background-image: url("../images/bg_visual_overview.jpg");
             background-repeat: no-repeat; background-position:center -250px; height: 1400px; }
@@ -151,7 +151,6 @@
             <section class="page" id="page1">
                 <div class="page_wrap">
                     <h2 class="page_tit">관리자 페이지</h2>
-                    <hr>
                     <div class="member">
                         <h3 class="mem">회원 정보</h3>
                         <table class="tb1" id="myTable">
@@ -225,10 +224,8 @@
                 </div>
             </section>
         </div>
-        <footer class="ft" id="ft">
-            <%@ include file="../footer.jsp" %>
-        </footer>
     </div>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

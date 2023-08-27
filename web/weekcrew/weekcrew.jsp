@@ -21,7 +21,7 @@
 
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
+
         .contents { clear:both; min-height:100vh;
             background-image: url("../weekcrew/images/library.jpg");
             background-repeat: no-repeat; background-position:center -250px; height: 1550px;}
@@ -86,7 +86,6 @@
         <section class="page" id="page1">
             <div class="page_wrap">
                 <h2 class="page_tit">윜크루 되면</h2>
-                <hr>
                         <div class="row">
                             <section class="container">
                                 <div class="img1">
@@ -178,9 +177,7 @@
             </div>
         </section>
     </div>
-    <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
-    </footer>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

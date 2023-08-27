@@ -52,10 +52,9 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
-        .contents { clear:both; min-height:100vh;
+        .contents { clear:both; min-height:130vh;
             background-image: url("../images/bg_visual_overview.jpg");
-            background-repeat: no-repeat; background-position:center -250px; height: 1400px; }
+            background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
         .page { clear:both; width: 100vw; height: 100vh; position:relative; }
@@ -93,7 +92,7 @@
         .dataTables_wrapper {
             position: relative;
             clear: both;
-            margin-top: 90px;
+            margin-top: 70px;
         }
     </style>
 
@@ -120,7 +119,6 @@
             <section class="page" id="page1">
                 <div class="page_wrap">
                     <h2 class="page_tit">공지사항</h2>
-                    <hr>
                     <table class="tb1" id="myTable">
                         <thead>
                         <tr>
@@ -162,7 +160,6 @@
                         } );
                     </script>
                     <div class="btn_group">
-                        <br><hr><br>
                         <tr>
                             <td>
                                 <%
@@ -178,10 +175,8 @@
                 </div>
             </section>
         </div>
-        <footer class="ft" id="ft">
-            <%@ include file="../footer.jsp" %>
-        </footer>
     </div>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

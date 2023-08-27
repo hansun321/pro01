@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
+
         .contents { clear:both; min-height:100vh;
             background-image: url("../images/bg_visual_overview.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
@@ -85,7 +85,7 @@
             <section class="page" id="page1">
                 <div class="page_wrap">
                     <h2 class="page_tit"><%=sel %> 글쓰기</h2>
-                    <br><br><hr><br><br>
+
                     <form action="addQuestionPro.jsp" method="post">
                         <table class="tb1">
                             <tbody>
@@ -114,10 +114,8 @@
                 </div>
             </section>
         </div>
-        <footer class="ft" id="ft">
-            <%@ include file="../footer.jsp" %>
-        </footer>
     </div>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

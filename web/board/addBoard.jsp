@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
+
         .contents { clear:both; min-height:800px;
             background-image: url("../images/bg_visual_overview.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
@@ -75,7 +75,6 @@
             <section class="page" id="page1">
                 <div class="page_wrap">
                     <h2 class="page_tit">공지사항 글 쓰기</h2>
-                    <hr>
                     <form action="/board/addBoardPro.jsp" method="post">
                         <table class="tb1">
                             <tbody>
@@ -104,9 +103,7 @@
                 </div>
             </section>
         </div>
-        <footer class="ft" id="ft">
-            <%@ include file="../footer.jsp" %>
-        </footer>
+        <%@ include file="../footer.jsp" %>
     </div>
 </body>
 </html>

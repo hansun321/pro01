@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
         .contents { clear:both; min-height:100vh;
             background-image: url("../images/bg_visual_overview.jpg");
             background-repeat: no-repeat; background-position:center -250px; height: 910px; }
@@ -119,9 +118,7 @@
             </div>
         </section>
     </div>
-    <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
-    </footer>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

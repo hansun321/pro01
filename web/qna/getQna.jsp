@@ -76,7 +76,7 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
+
         .contents { clear:both; min-height:1100px;
             background-image: url("../images/bg_visual_overview.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
@@ -159,7 +159,6 @@
             <section class="page" id="page1">
                 <div class="page_wrap">
                     <h2 class="page_tit">질문 및 답변 글 상세보기</h2>
-                    <hr>
                     <table class="tb1" id="myTable">
                         <tbody>
                         <!-- 6. 해당 글번호에 대한 글 상세내용 출력 -->
@@ -275,11 +274,9 @@
                 </div>
             </section>
         </div>
-        <footer class="ft" id="ft">
-            <%@ include file="../footer.jsp"%>
-        </footer>
     </div>
 </div>
+<%@ include file="../footer.jsp"%>
     <script>
         function delComment(qno, cno) {
             var flag = confirm("댓글을 삭제하시겠습니까?");

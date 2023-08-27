@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
+
         .contents { clear:both; min-height:100vh;
             background-image: url("../weekcrew/images/library.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
@@ -223,7 +223,7 @@
                     (시행일) 이 약관은 2016년 12월 30일부터 적용되며, 종전 약관은 본 약관으로 대체되며, 개정된 약관의 적용일 이전 가입자도 개정된 약관의 적용을 받습니다.
                 </div>
                 <div class="btn_fr">
-                    <input type="checkbox" id="ck_item1" name="ck_item"> <label for="ck_item1">약관의 동의</label><br><br>
+                    <input type="checkbox" id="ck_item1" name="ck_item"> <label for="ck_item1">약관의 동의</label>
                     <button type="button" id="in_btn1" class="inbtn">다음 단계</button>
                 </div>
                 <script>
@@ -241,8 +241,6 @@
             </div>
         </section>
     </div>
-    <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
-    </footer>
+    <%@ include file="../footer.jsp" %>
 </body>
 </html>

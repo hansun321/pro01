@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="hd.css">
     <style>
-        /* 본문 영역 스타일 */
-        .contents {
+        /* 본문 영역 스타일 */.contents {
             clear: both;
         }
 
@@ -415,8 +414,8 @@
                 });
             });
         </script>
-        <%@ include file="footer.jsp" %>
     </div>
 </div>
+<%@ include file="footer.jsp" %>
 </body>
 </html>

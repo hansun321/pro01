@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
+
         .contents { clear:both;
             background-image: url("../../weekcrew/images/library.jpg");
             background-repeat: no-repeat; background-position:center -250px;}
@@ -168,7 +168,6 @@
             </div>
             <section>
                 <h2 class="page_tit">WEEK 관리자 페이지</h2>
-                <hr>
                 <div class="inner">
                     <div class="wrap">
                         <a class="wrap-a" href="/member/admin/admin.jsp">

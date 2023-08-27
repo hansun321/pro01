@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
+
         .contents { clear:both; min-height:1200px;
             background-image: url("../weekcrew/images/library.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
@@ -106,7 +106,6 @@
         <section class="page" id="page1">
             <div class="page_wrap">
                 <h2 class="page_tit">나의 정보</h2>
-                <hr>
                     <table class="tb1">
                         <tbody>
                         <tr>
@@ -155,10 +154,8 @@
             </div>
         </section>
     </div>
-    <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
-    </footer>
 </div>
+<%@ include file="../footer.jsp" %>
     <script>
         function withdraw(memId) {
             var flag = confirm("정말로 탈퇴하시겠습니까?");

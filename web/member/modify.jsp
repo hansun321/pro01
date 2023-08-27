@@ -69,7 +69,7 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
+
         .contents { clear:both; min-height:1000px;
             background-image: url("../weekcrew/images/library.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
@@ -115,7 +115,6 @@
         <section class="page" id="page1">
             <div class="page_wrap">
                 <h2 class="page_tit">회원 정보 수정</h2>
-                <hr>
 
                 <form action="modifypro.jsp" id="modify_frm" class="frm">
                     <table class="tb1">
@@ -160,9 +159,7 @@
             </div>
         </section>
     </div>
-    <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
-    </footer>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

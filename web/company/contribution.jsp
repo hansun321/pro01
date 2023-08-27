@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff;}
         .contents { clear:both; height:1700px;
             background-image: url("../images/bg_visual_overview.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
@@ -110,7 +109,6 @@
         <section class="page" id="page1">
             <div class="page_wrap">
                 <h2 class="page_tit">사회공헌</h2>
-                <hr>
                 <div class="inner1">
                     <div class="btn-group tab-group type3">
                         <a ui-sref="textbook01" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/company.jsp">윜이란?</a>
@@ -149,9 +147,7 @@
             </div>
         </section>
     </div>
-    <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
-    </footer>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

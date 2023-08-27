@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="../../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #ffffff; }
+
         .contents { clear:both; min-height:1000px;
             background-image: url("../../weekcrew/images/library.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
@@ -130,7 +130,6 @@
             <section class="page" id="page1">
                 <div class="page_wrap">
                     <h2 class="page_tit">윜소식 관리</h2>
-                    <hr>
                     <div class="member">
                         <table class="tb1" id="myTable">
                             <thead>

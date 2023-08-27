@@ -106,8 +106,8 @@
             <section class="page" id="page1">
                 <div class="page_wrap">
                     <h2 class="page_tit">자주하는질문</h2>
-                    <br><br>
-                    <br><br>
+
+
                     <ul class="qnalist">
                         <% for (Faq f : faqList) { %>
                         <li>
@@ -117,8 +117,8 @@
                             </div>
                         </li>
                         <% } %>
-                        <br><br>
-                        <br><br>
+
+
                     </ul>
                     <script>
                         $(document).ready(function () {
@@ -132,9 +132,7 @@
             </section>
         </div>
     </div>
-    <footer class="ft" id="ft">
-        <%@ include file="../footer.jsp" %>
-    </footer>
 </div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>
