@@ -39,13 +39,6 @@
                     <li><a href="/company/contribution.jsp">사회공헌</a></li>
                 </ul>
             </li>
-            <%--<li class="item2">
-                <a href="/board/boardList.jsp" class="dp1">윜 News</a>
-                <ul class="sub">
-                    <li><a href="/board/boardList.jsp">공지사항</a></li>
-                    <li><a href="/masscom/masscomList.jsp">언론보도</a></li>
-                </ul>
-            </li>--%>
             <li class="item2">
                 <a href="/business/weekly.jsp" class="dp1">사업영역</a>
                 <ul class="sub">
