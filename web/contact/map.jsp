@@ -19,12 +19,12 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .contents { clear:both; min-height:100vh;
-            background-image: url("../images/bg_visual_overview.jpg");
-            background-repeat: no-repeat; background-position:center -250px; height: 910px; }
+        .contents { clear:both; min-height:100%;
+            background-image: url("../images/bk.jpg");
+            background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
-        .page { clear:both; width: 100vw; height: 100vh; position:relative; }
+        .page { clear:both; width: 100vw; /*height: 1000px;*/ position:relative; }
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
@@ -35,7 +35,6 @@
             width:1200px; margin: 0 auto; text-align: right; color:#fff;
             padding-top: 28px; padding-bottom: 28px; }
         .breadcrumb a { color:#fff; }
-
     </style>
     <link rel="stylesheet" href="../ft.css">
     <link rel="stylesheet" type="text/css" href="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.css">
@@ -55,6 +54,7 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            margin-left: -34px;
         }
         .mapBtn:hover {
             background-color: #0056b3;

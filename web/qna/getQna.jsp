@@ -78,7 +78,7 @@
         /* 본문 영역 스타일 */
 
         .contents { clear:both; min-height:1100px;
-            background-image: url("../images/bg_visual_overview.jpg");
+            background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -98,7 +98,7 @@
         .tb1 { width:800px; margin:50px auto; }
         .tb1 th { line-height:32px; padding-top:8px; padding-bottom:8px;
             border-top:1px solid #fff; border-bottom:1px solid #fff;
-            background-color: #f5be8b; color:#fff; }
+            background-color: #8CC63E; color:#fff; }
         .tb1 td {line-height:32px; padding-top:8px; padding-bottom:8px;
             border-bottom:1px solid #fff;
             padding-left: 14px; border-top:1px solid #fff; }
@@ -107,7 +107,7 @@
             text-indent:14px; font-size:18px; }
         .inbtn { display:block;  border-radius:100px;
             min-width:100px; padding-left: 24px; padding-right: 24px; text-align: center;
-            line-height: 48px; background-color: #f5be8b; color:#fff; font-size: 18px;
+            line-height: 48px; background-color: #8CC63E; color:#fff; font-size: 18px;
             float:left; margin-right: 20px; margin-top: 10px; }
         .inbtn:last-child { float:right; }
 
@@ -120,7 +120,7 @@
             resize: vertical;
         }
         .comment-form button {
-            margin-top: 10px; padding: 8px 16px; background-color: #f5be8b;
+            margin-top: 10px; padding: 8px 16px; background-color: #8CC63E;
             color: white; border: none; border-radius: 5px; cursor: pointer;
         }
 
@@ -130,12 +130,12 @@
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
-        .comment-table th { background-color: #f5be8b; color: #fff }
+        .comment-table th { background-color: #8CC63E; color: #fff }
 
         .comment-info { margin-bottom: 10px; }
         .comment-date { margin-left: 20px; font-size: 13px;  color: #777; }
         .comment-write {
-            margin-top: 7px; padding: 5px; background-color: #f5be8b; color: #fff;
+            margin-top: 7px; padding: 5px; background-color: #8CC63E; color: #fff;
             border: none;
         }
 

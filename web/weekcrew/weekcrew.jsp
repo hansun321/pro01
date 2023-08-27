@@ -23,7 +23,7 @@
         /* 본문 영역 스타일 */
 
         .contents { clear:both; min-height:100vh;
-            background-image: url("../weekcrew/images/library.jpg");
+            background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; height: 1550px;}
         .contents::after { content:""; clear:both; display:block; width:100%; }
 

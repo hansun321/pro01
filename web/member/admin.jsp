@@ -74,7 +74,7 @@
         /* 본문 영역 스타일 */
 
         .contents { clear:both; min-height:1800px;
-            background-image: url("../images/bg_visual_overview.jpg");
+            background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; height: 1400px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -91,11 +91,11 @@
         .breadcrumb a { color:#fff; }
         .tb1 { width:800px; margin:50px auto; }
         .tb1 th { line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-top:1px solid #f5be8b; border-bottom:1px solid #f5be8b;
-            background-color: #f5be8b; color:#fff; }
+            border-top:1px solid #8CC63E; border-bottom:1px solid #8CC63E;
+            background-color: #8CC63E; color:#fff; }
         .tb1 td {line-height:32px;
-            border-bottom:1px solid #f5be8b;
-            border-top:1px solid #f5be8b; }
+            border-bottom:1px solid #8CC63E;
+            border-top:1px solid #8CC63E; }
 
         .tb1 .item1 { width:10%; text-align: center; }
         .tb1 .item2 { width:10%; text-align: center; max-width: 50px; overflow: hidden;}
@@ -127,7 +127,7 @@
             font-size: 38px;
             /* padding: 5px 20px; */
             margin: 50px auto 0px auto;
-            color: #f5be8b;}
+            color: #8CC63E;}
     </style>
 
     <link rel="stylesheet" href="../ft.css">

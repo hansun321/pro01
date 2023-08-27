@@ -23,7 +23,7 @@
         /* 본문 영역 스타일 */
 
         .contents { clear:both; min-height: 850px;
-            background-image: url("../weekcrew/images/library.jpg");
+            background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -40,7 +40,7 @@
         .breadcrumb a { color:#fff; }
         .tb1 { width:500px; margin:50px auto; }
         .tb1 th { width:180px; line-height:32px; padding-top:8px; padding-bottom:8px;
-            background-color:#f5be8b; color:#fff; }
+            background-color:#8CC63E; color:#fff; }
         .tb1 td { width:310px; line-height:32px; padding-top:8px; padding-bottom:8px;
             padding-left: 14px; }
         .tb1 .th1 {border-radius: 50px 0 0 0;}
@@ -49,7 +49,7 @@
             text-indent:14px; font-size:18px; }
         .inbtn { display:block;  border-radius:100px;
             min-width:140px; padding-left: 24px; padding-right: 24px; text-align: center;
-            line-height: 48px; background-color: #f5be8b; color:#fff; font-size: 18px; border: #f5be8b;}
+            line-height: 48px; background-color: #8CC63E; color:#fff; font-size: 18px; border: #8CC63E;}
         .inbtn:first-child { float:left; }
         .inbtn:last-child { float:right; }
     </style>

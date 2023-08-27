@@ -52,8 +52,8 @@
     <style>
         /* 본문 영역 스타일 */
 
-        .contents { clear:both; min-height:100vh;
-            background-image: url("../weekcrew/images/library.jpg");
+        .contents { clear:both; min-height:130vh;
+            background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -72,18 +72,18 @@
 
         .tb1 { width:800px; margin:50px auto; }
         .tb1 th { line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-top:1px solid #f5be8b; border-bottom:1px solid #f5be8b;
-            background-color:#f5be8b; color:#fff; }
+            border-top:1px solid #8CC63E; border-bottom:1px solid #8CC63E;
+            background-color:#8CC63E; color:#fff; }
         .tb1 td {line-height:32px; padding-top:8px; padding-bottom:8px;
-            border-bottom:1px solid #f5be8b;
-            padding-left: 14px; border-top:1px solid #f5be8b; }
+            border-bottom:1px solid #8CC63E;
+            padding-left: 14px; border-top:1px solid #8CC63E; }
 
         .indata { display:inline-block; width:300px; height: 48px; line-height: 48px;
             text-indent:14px; font-size:18px; }
         .inbtn { display:block;  border-radius:100px;
             min-width:100px; padding-left: 24px; padding-right: 24px; text-align: center;
-            line-height: 48px; background-color: #f5be8b; color:#fff; font-size: 18px;
-            float:left; margin-right: 20px; border-color: #f5be8b; }
+            line-height: 48px; background-color: #8CC63E; color:#fff; font-size: 18px;
+            float:left; margin-right: 20px; border-color: #8CC63E; }
         .inbtn:last-child { float:right; }
     </style>
 

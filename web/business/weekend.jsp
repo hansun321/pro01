@@ -23,7 +23,7 @@
     <style>
         /* 본문 영역 스타일 */
         .contents { clear:both; height:2450px;
-            background-image: url("../images/bg_visual_overview.jpg");
+            background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; padding-bottom: 500px;}
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -102,7 +102,7 @@
             justify-content: center;
         }
         .tab-group .active {
-            border-color: #f5be8b;
+            border-color: #8CC63E;
             background: #ffffff;
             color: #222;
             margin: 0 0.416rem;

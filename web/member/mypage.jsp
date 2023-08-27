@@ -65,7 +65,7 @@
         /* 본문 영역 스타일 */
 
         .contents { clear:both; min-height:1200px;
-            background-image: url("../weekcrew/images/library.jpg");
+            background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -81,15 +81,15 @@
             padding-top: 28px; padding-bottom: 28px; }
         .breadcrumb a { color:#fff; }
         .tb1 { width:600px; margin:100px auto; }
-        .tb1 th { width: 100px; background-color: #f5be8b; height: 48px; margin-top: 50px; margin-bottom: 50px; color:#fff;}
-        .tb1 td {  width: 300px;  line-height: 48px; padding-top:24px; padding-bottom:24px; padding-left: 20px; color: #f5be8b;
+        .tb1 th { width: 100px; background-color: #8CC63E; height: 48px; margin-top: 50px; margin-bottom: 50px; color:#fff;}
+        .tb1 td {  width: 300px;  line-height: 48px; padding-top:24px; padding-bottom:24px; padding-left: 20px;
             max-width: 200px;
             overflow: hidden;}
         .tb1 .th1:first-child {border-radius: 50% 0 0 0;}
         .tb1 .th2 {border-radius: 0 0 0 50%;}
 
         .inbtn { display: inline-block; margin: 10px; padding: 10px 30px;
-            border-radius: 100px; background-color: #f5be8b; color: #fff; }
+            border-radius: 100px; background-color: #8CC63E; color: #fff; }
     </style>
 
     <link rel="stylesheet" href="../ft.css">

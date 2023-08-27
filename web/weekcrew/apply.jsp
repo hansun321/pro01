@@ -21,7 +21,7 @@
     <style>
         /* 본문 영역 스타일 */
         .contents { clear:both; height:1500px;
-            background-image: url("../weekcrew/images/library.jpg");
+            background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
@@ -41,16 +41,16 @@
         .tb1 { width:800px; margin:50px auto; }
         .tb1 th { width:150px; line-height:32px; padding-top:12px; padding-bottom:12px;
             border-radius: 20px;
-            background-color: #f5be8b; color:#fff; text-align: center; }
+            background-color: #8CC63E; color:#fff; text-align: center; }
         .tb1 td { width:650px; line-height:32px; padding-top:8px; padding-bottom:8px;
 
             padding-left: 14px;  }
         .indata { display:inline-block; width:740px; height: 48px; line-height: 48px;
             padding:14px; font-size:18px;border: none;}
         .indata2 { width: 740px; padding: 14px; font-size:18px; border: none; }
-        .inbtn { display:block;  border-radius:100px; border-color: #f5be8b;
+        .inbtn { display:block;  border-radius:100px; border-color: #8CC63E;
             min-width:140px; padding-left: 24px; padding-right: 24px; text-align: center;
-            line-height: 48px; background-color: #f5be8b; color:#fff; font-size: 18px; }
+            line-height: 48px; background-color: #8CC63E; color:#fff; font-size: 18px; }
         .inbtn:first-child { float:left; }
         .inbtn:last-child { float:right; }
     </style>

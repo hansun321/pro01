@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         .contents { clear:both; min-height:100vh;
-            background-image: url("/images/library.jpg");
+            background-image: url("/images/bk.jpg");
             background-repeat: no-repeat; background-position:center -265px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 

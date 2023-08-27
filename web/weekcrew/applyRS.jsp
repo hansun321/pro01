@@ -28,7 +28,7 @@
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap { clear:both; width: 1200px; height: 460px; margin:0 auto; }
-        .page_tit { font-size:48px; text-align: center; padding-top:260px; color:#f5be8b;
+        .page_tit { font-size:48px; text-align: center; padding-top:260px; color:#8CC63E;
             padding-bottom: 2.4rem; }
 
         .breadcrumb { clear:both;
@@ -51,7 +51,7 @@
         .btn { margin-left: 41%; }
         .btn .inbtn { display:block;  border-radius:100px;
             width:140px; padding-left: 24px; padding-right: 24px; text-align: center;
-            line-height: 48px; background-color: #f5be8b; color:#fff; font-size: 18px; }
+            line-height: 48px; background-color: #8CC63E; color:#fff; font-size: 18px; }
     </style>
 
     <link rel="stylesheet" href="../ft.css">
