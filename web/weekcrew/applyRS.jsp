@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #fffcf2; min-height: 100vh; }
+        .wrap { background-color: #ffffff; min-height: 100vh; }
         .contents { clear:both; min-height:460px;}
         .contents::after { content:""; clear:both; display:block; width:100%; }
 

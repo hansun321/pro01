@@ -104,34 +104,6 @@
             text-align: right;
         }
 
-
-        .parent-container {
-            display: flex;
-            justify-content: center;
-        }
-
-
-        .scroll_button_wrap {
-            margin-top: 40px;
-            display:flex;
-            justify-content:center;
-            width:100%;
-            align-items : center;
-        }
-
-        .scroll_button {
-            gap: 10px;
-            border: 2px solid #996633;
-            border-radius: 20px;
-            padding: 10px 20px;
-            background-color: #fffcf2;
-            height: 200px;
-            width: 40%;
-        }
-        .scroll_button:nth-child(1){
-            margin-right: 10px;
-        }
-
         .scroll_button img {
             width: 100%;
             height: 60px;
@@ -145,11 +117,6 @@
         .img_box li.active {
             visibility: visible;
             opacity: 1;
-        }
-
-        .vs_tit {
-            font-size: 60px;
-            color: #fff;
         }
 
         .btn_box li .vs_btn {
@@ -204,41 +171,11 @@
             content: "▶";
         }
 
-        .page {
-            clear: both;
-            width: 100vw;
-            position: relative;
-        }
-
         .page::after {
             content: "";
             display: block;
             width: 100%;
             clear: both;
-        }
-
-        .page_wrap {
-            clear: both;
-            width: 1200px;
-            height: auto;
-            margin: 0 auto;
-        }
-
-        .page_tit {
-            font-size: 55px;
-            text-align: center;
-            padding-top: 1.75em;
-        }
-
-        #page1 {
-            background-position: 15vw 63vh;
-            background-repeat: no-repeat;
-        }
-
-        .pic_lst {
-            clear: both;
-            width: 1200px;
-            margin: 60px auto;
         }
 
         .pic_lst li {
@@ -289,63 +226,9 @@
             background-image: url("./images/img_social_main04.jpg");
         }
 
-        .pic_lst {
-            display: flex;
-            justify-content: space-between; /* Distribute items evenly */
-            flex-wrap: wrap; /* Allow items to wrap */
-        }
-
-        .pic_item1,
-        .pic_item {
-            flex: 1 1 calc(50% - 10px); /* Divide into two columns with a bit of margin */
-            margin-bottom: 20px; /* Add some spacing between items */
-        }
-
-        .pic_content {
-            height: 450px;
-            width: 83%;
-            border: 4px solid #996633;
-            border-radius: 10px;
-            padding: 10px;
-            text-align: center;
-        }
-
         .pic_content img {
             max-width: 100%;
             border-radius: 10px;
-        }
-
-        .pic_tit {
-            margin-top: 10px;
-        }
-
-        .additional_text {
-            text-align: center;
-            margin-top: -22px;
-            font-size: 25px;
-        }
-
-        .pic_com {
-            padding-left: 20px;
-            padding-top: 20px;
-            font-size: 17px;
-        }
-
-        .pic_tit {
-            padding-left: 20px;
-            padding-top: 20px;
-            font-size: 18px;
-        }
-
-        .pic_arrow {
-            display: block;
-            width: 110px;
-            height: 10px;
-            border-bottom: 1px solid #fff;
-            margin-top: 20px;
-            margin-left: -12px;
-            transition: 0.4s;
-            position: relative;
         }
 
         .pic_lst li:hover a .pic_arrow {
@@ -374,61 +257,9 @@
             width: 100%;
         }
 
-        .slide_box::-webkit-scrollbar {
-            display: none;
-        }
-
-        .slide_box {
-            clear: both;
-            width: calc(100vw - 350px);
-            height: 400px;
-            margin-left: 350px;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-
-        .page_com {
-            line-height: 40px;
-            font-size: 25px;
-            text-align: center;
-            padding-bottom: 30px;
-            padding-top: 30px;
-        }
-
-        .circle-box {
-            display: flex;
-            line-height: 30px;
-            text-align: center;
-            position: relative;
-            width: 380px; /* 원하는 크기로 조정 */
-            height: 220px; /* 원하는 크기로 조정 */
-            margin: 0 auto;
-            border-radius: 50%; /* 동그라미 모양 */
-            background-color: #F5DA81;
-            color: white;
-            overflow: hidden;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .cate_lst {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px; /* 원하는 간격을 설정하세요. */
-        }
-
         .cate_lst li {
             width: 380px;
             margin: 30px;
-        }
-
-        .thumb_list {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            padding: 0;
-            margin-left: 250px;
         }
 
         .thumb_list li {
@@ -438,16 +269,6 @@
             background-color: #f0f0f0;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .thumb_tit {
-            text-align: center;
-            font-size: 22px;
-            margin-top: 15px;
-        }
-
-        .ico_box {
-            margin-top: 15px;
         }
 
         .ico_box .ico {
@@ -479,23 +300,6 @@
             color: #333;
         }
 
-
-        .thumb_date {
-            display: inline-block;
-            font-size: 14px;
-            color: #888;
-        }
-
-
-        .cate_tit {
-            text-align: center;
-            padding-left: 32px;
-            font-size: 45px;
-            line-height: 2;
-            padding-top: 24px;
-            padding-bottom: 24px;
-        }
-
         .cate_lst li {
             margin-left: 14px;
             margin-right: 14px;
@@ -505,15 +309,6 @@
 
         .cate_tit li a {
             display: block;
-        }
-
-        .bd_content {
-            width: auto;
-            padding-right: 24px;
-        }
-
-        .bd_date {
-            padding-top: 18px;
         }
 
         .sl-btn-box .btn {
@@ -620,140 +415,7 @@
                 });
             });
         </script>
-
-        <div>
-            <h2 class="scroll_button_wrap">
-                <button type="button" class="scroll_button" data-target="page1">
-                    <img src="images/weekly.png?v=1" alt="weeklyLogo">
-                    <p>바로가기</p>
-                </button>
-                <button type="button" class="scroll_button" data-target="page2">
-                    <img src="images/weekend.png?v=1" alt="weekendLogo">
-                    <p>바로가기</p>
-                </button>
-            </h2>
-        </div>
-
-
-        <section class="page" id="page1">
-            <h2 class="page_tit">&quot;Week는 지금&quot;</h2>
-            <div class="pic_lst">
-                <div class="pic_item1">
-                    <a href="">
-                        <div class="pic_content">
-                            <img src="images/book.jpg" alt="도서">
-                            <p class="pic_com">초등 교육을 위한 매거진 행복한 교육 8월호</p>
-                            <h3 class="pic_tit">자녀에게 어떤 책이 도움이 될까? 부모와 아이와 함께 읽어요!</h3>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="pic_item">
-                    <a href="">
-                        <div class="pic_content">
-                            <img src="images/game.jpg" alt="">
-                            <p class="pic_com">2학기 준비, 어떻게 하고 계세요?</p>
-                            <h3 class="pic_tit">Week 교육과 함께! 게임으로 즐겁게! <br></h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <p class="additional_text">Week의 꿀팁 가득한 SNS 콘텐츠를 소개합니다!</p>
-            <div class="pic_lst">
-                <div class="pic_item">
-                    <a href="">
-                        <div class="pic_content">
-                            <img src="images/thinkkid.jpg" alt="">
-                            <p class="pic_com">5~6세 학부모님 주목해주세요!</p>
-                            <h3 class="pic_tit">유아기에 생기는 친구가 궁금하다면?</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="pic_item">
-                    <a href="">
-                        <div class="pic_content">
-                            <img src="images/textbook.jpg" alt="평가문제집">
-                            <p class="pic_com">Week 자습서 & 평가문제집 신간 출시!</p>
-                            <h3 class="pic_tit">주요과목부터 예체능까지!, Week 자습서로 끝내자!<br></h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section class="page" id="page2">
-            <div class="page_wrap">
-                <h2 class="page_tit">사회공헌</h2>
-                <p class="page_com">Week는 기업과 사회, 환경이 공존하는 <br> 아름다운 세상을 꿈꾸고 있습니다!</p>
-                <ul class="thumb_list">
-                    <li class="item2">
-                        <div class="thumb_box"></div>
-                        <p class="thumb_tit">학습봉사</p>
-                        <div class="ico_box">
-                            <span class="ico_text">직접 아이들을 지도하고 상호소통하며 <br> 용기와 희망을 전하고 있습니다.</span>
-                        </div>
-                    </li>
-                    <li class="item3">
-                        <div class="thumb_box"></div>
-                        <p class="thumb_tit">지역사회후원</p>
-                        <div class="ico_box">
-                            <span class="ico_text">Week의 강력한 의지와 사명감으로 <br> 따뜻한 나눔을 실천하고 있습니다.</span>
-                        </div>
-                    </li>
-                    <li class="item4">
-                        <div class="thumb_box"></div>
-                        <p class="thumb_tit">학회지원</p>
-                        <div class="ico_box">
-                            <span class="ico_text">대한민국 미래 교육의 발전을 위해 <br> 최선의 역할을 다하겠습니다.</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <br><br><br><br><br>
-
-            <%--            <div class="slide_box">--%>
-            <%--                <ul class="card_lst">--%>
-            <%--                    <li class="item1">--%>
-            <h3 class="cate_tit">언론보도</h3>
-            <p class="additional_text">최신 소식을 통해 Week의 보도자료를 소개합니다!</p>
-            <ul class="cate_lst">
-                <li>
-                    <div class="circle-box">
-                        <a href="">
-                            <p class="bd_content">운필력 키우는 한글 글쓰기, <br> 유아학습지로 창의력과 표현력을 기른다.</p>
-                            <p class="bd_date">2023-07-13</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="circle-box">
-                        <a href="">
-                            <p class="bd_content">Week, <br> 스마트 더블케어 "윜"패스 출시</p>
-                            <p class="bd_date">2023-07-18</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="circle-box">
-                        <a href="">
-                            <p class="bd_content">엄마들의 만국 공통 걱정은? <br> 행복한 교육에서 확인</p>
-                            <p class="bd_date">2023-07-20</p>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="circle-box">
-                        <a href="">
-                            <p class="bd_content">즐거운 방학! <br> 어떻게 보내야할까?</p>
-                            <p class="bd_date">2023-07-30</p>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <footer class="ft" id="ft">
-            <%@ include file="footer.jsp" %>
-        </footer>
+        <%@ include file="footer.jsp" %>
     </div>
 </div>
 </body>

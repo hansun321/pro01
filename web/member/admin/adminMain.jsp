@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #fffcf2; }
+        .wrap { background-color: #ffffff; }
         .contents { clear:both;
             background-image: url("../../weekcrew/images/library.jpg");
             background-repeat: no-repeat; background-position:center -250px;}
@@ -130,7 +130,7 @@
         }
         .wrap-a {
             text-decoration: none;
-            color: #fffcf2;
+            color: #ffffff;
         }
         section .inner .wrap a h2 a {
             font: bold 16px/1 "arial";

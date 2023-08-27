@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #fffcf2; }
+        .wrap { background-color: #ffffff; }
         .contents { clear:both; min-height:100vh;
             background-image: url("../images/bg_visual_overview.jpg");
             background-repeat: no-repeat; background-position:center -250px; }

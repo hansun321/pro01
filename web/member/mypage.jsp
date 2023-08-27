@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .wrap { background-color: #fffcf2; }
+        .wrap { background-color: #ffffff; }
         .contents { clear:both; min-height:1200px;
             background-image: url("../weekcrew/images/library.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
