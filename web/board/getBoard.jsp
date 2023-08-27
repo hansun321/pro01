@@ -58,7 +58,6 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-
         .contents { clear:both; min-height:800px;
             background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
@@ -97,7 +96,6 @@
     <link rel="stylesheet" href="../ft.css">
 </head>
 <body>
-<div class="container">
 <div class="wrap">
     <header class="hd" id="hd">
         <%@ include file="../header.jsp" %>
@@ -156,8 +154,7 @@
             </div>
         </section>
     </div>
-    <%@ include file="../footer.jsp" %>
 </div>
-</div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

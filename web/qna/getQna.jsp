@@ -76,13 +76,12 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-
-        .contents { clear:both; min-height:1100px;
+        .contents { clear:both; min-height:1000px;
             background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
-        .page { clear:both; width: 100vw; height: 100vh; position:relative; }
+        .page { clear:both; width: 100vw; height: auto; position:relative; }
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
@@ -147,133 +146,131 @@
     <link rel="stylesheet" href="../ft.css">
 </head>
 <body>
-<div class="container">
-    <div class="wrap">
-        <header class="hd" id="hd">
-            <%@ include file="../header.jsp"%>
-        </header>
-        <div class="contents" id="contents">
-            <div class="breadcrumb">
-                <p><a href="/">HOME</a> &gt; <a href="/qna/qnaList.jsp">질문 및 답변</a> &gt; <span>질문 및 답변 글 상세보기</span></p>
-            </div>
-            <section class="page" id="page1">
-                <div class="page_wrap">
-                    <h2 class="page_tit">질문 및 답변 글 상세보기</h2>
-                    <table class="tb1" id="myTable">
-                        <tbody>
-                        <!-- 6. 해당 글번호에 대한 글 상세내용 출력 -->
-                        <tr>
-                            <th>유형</th>
-                            <td>
-                                <% if(qna.getLev()==0) { %>
-                                <span>질문</span>
-                                <% } else { %>
-                                <span>답변</span>
+<div class="wrap">
+    <header class="hd" id="hd">
+        <%@ include file="../header.jsp"%>
+    </header>
+    <div class="contents" id="contents">
+        <div class="breadcrumb">
+            <p><a href="/">HOME</a> &gt; <a href="/qna/qnaList.jsp">질문 및 답변</a> &gt; <span>질문 및 답변 글 상세보기</span></p>
+        </div>
+        <section class="page" id="page1">
+            <div class="page_wrap">
+                <h2 class="page_tit">질문 및 답변 글 상세보기</h2>
+                <table class="tb1" id="myTable">
+                    <tbody>
+                    <!-- 6. 해당 글번호에 대한 글 상세내용 출력 -->
+                    <tr>
+                        <th>유형</th>
+                        <td>
+                            <% if(qna.getLev()==0) { %>
+                            <span>질문</span>
+                            <% } else { %>
+                            <span>답변</span>
+                            <% } %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>글 제목</th>
+                        <td><%=qna.getTitle() %></td>
+                    </tr>
+                    <tr>
+                        <th>글 내용</th>
+                        <td><%=qna.getContent() %></td>
+                    </tr>
+                    <tr>
+                        <th>작성자</th>
+                        <td>
+                            <%=qna.getName() %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>작성일</th>
+                        <td><%=qna.getResdate() %></td>
+                    </tr>
+                    <tr>
+                        <th>조회수</th>
+                        <td><%=qna.getCnt() %></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <!-- 7. 용도별 링크 버튼 추가 -->
+                            <!-- 현재 글이 질문 글이면,
+                                로그인한 사람만 답변하기,
+                                질문을 등록한 사람(관리자포함)만 질문글 수정,
+                                질문글 삭제 버튼 추가
+                             아니면(답변 글이면),
+                                답변을 등록한 사람(관리자포함)만 답변글 삭제,
+                                답변글 버튼 수정 -->
+                            <!-- 모든 사용자 목록 버튼 추가 -->
+                            <% if(qna.getLev()==0) { %>
+                            <% if(sid!=null) { %>
+                            <a href="/qna/addQuestion.jsp?lev=1&par=<%=qna.getQno() %>" class="inbtn">답변하기</a>
+                            <% } %>
+                            <% if(sid!=null && (sid.equals("admin") || sid.equals(qna.getAuthor()))) { %>
+                            <a href="/qna/updateQna.jsp?qno=<%=qna.getQno() %>" class="inbtn">질문 수정하기</a>
+                            <a href="/qna/delQna.jsp?qno=<%=qna.getQno() %>&lev=0" class="inbtn">질문 삭제하기</a>
+                            <% } %>
+                            <% } else { %>
+                            <% if(sid!=null && (sid.equals("admin") || sid.equals(qna.getAuthor()))) { %>
+                            <a href="/qna/updateQna.jsp?qno=<%=qna.getQno() %>" class="inbtn">답변 수정하기</a>
+                            <a href="/qna/delQna.jsp?qno=<%=qna.getQno() %>&lev=1" class="inbtn">답변 삭제하기</a>
+                            <% } %>
+                            <% } %>
+                            <a href="/qna/qnaList.jsp" class="inbtn">목록</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="comment-table">
+                    <tr>
+                        <th>댓글 목록</th>
+                    </tr>
+                    <%
+                        for (Comment c : cmtList) {
+                    %>
+                    <tr>
+                        <td>
+                            <div class="comment-info">
+                                <span><%=c.getAuthor() %></span>
+                                <span class="comment-date"><%=c.getResdate() %></span>
+                                <% if(sid!=null && (sid.equals("admin") || sid.equals(c.getAuthor()))) { %>
+                                <a href="javascript:delComment('<%=c.getQno() %>', '<%=c.getCno() %>')" class="del">삭제</a>
                                 <% } %>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>글 제목</th>
-                            <td><%=qna.getTitle() %></td>
-                        </tr>
-                        <tr>
-                            <th>글 내용</th>
-                            <td><%=qna.getContent() %></td>
-                        </tr>
-                        <tr>
-                            <th>작성자</th>
-                            <td>
-                                <%=qna.getName() %>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>작성일</th>
-                            <td><%=qna.getResdate() %></td>
-                        </tr>
-                        <tr>
-                            <th>조회수</th>
-                            <td><%=qna.getCnt() %></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <!-- 7. 용도별 링크 버튼 추가 -->
-                                <!-- 현재 글이 질문 글이면,
-                                    로그인한 사람만 답변하기,
-                                    질문을 등록한 사람(관리자포함)만 질문글 수정,
-                                    질문글 삭제 버튼 추가
-                                 아니면(답변 글이면),
-                                    답변을 등록한 사람(관리자포함)만 답변글 삭제,
-                                    답변글 버튼 수정 -->
-                                <!-- 모든 사용자 목록 버튼 추가 -->
-                                <% if(qna.getLev()==0) { %>
-                                <% if(sid!=null) { %>
-                                <a href="/qna/addQuestion.jsp?lev=1&par=<%=qna.getQno() %>" class="inbtn">답변하기</a>
-                                <% } %>
-                                <% if(sid!=null && (sid.equals("admin") || sid.equals(qna.getAuthor()))) { %>
-                                <a href="/qna/updateQna.jsp?qno=<%=qna.getQno() %>" class="inbtn">질문 수정하기</a>
-                                <a href="/qna/delQna.jsp?qno=<%=qna.getQno() %>&lev=0" class="inbtn">질문 삭제하기</a>
-                                <% } %>
-                                <% } else { %>
-                                <% if(sid!=null && (sid.equals("admin") || sid.equals(qna.getAuthor()))) { %>
-                                <a href="/qna/updateQna.jsp?qno=<%=qna.getQno() %>" class="inbtn">답변 수정하기</a>
-                                <a href="/qna/delQna.jsp?qno=<%=qna.getQno() %>&lev=1" class="inbtn">답변 삭제하기</a>
-                                <% } %>
-                                <% } %>
-                                <a href="/qna/qnaList.jsp" class="inbtn">목록</a>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <table class="comment-table">
-                        <tr>
-                            <th>댓글 목록</th>
-                        </tr>
+                            </div>
+                            <div class="comment-content"><%=c.getContent() %></div>
+                        </td>
+                    </tr>
+                    <%
+                        }
+                    %>
+                </table>
+                <%
+                    boolean isLoggedIn = sid != null;
+                %>
+                <form action="/comment/addCommentPro.jsp" method="post" class="comment-form">
+                    <div class="comment-input">
                         <%
-                            for (Comment c : cmtList) {
+                            if(isLoggedIn) {
                         %>
-                        <tr>
-                            <td>
-                                <div class="comment-info">
-                                    <span><%=c.getAuthor() %></span>
-                                    <span class="comment-date"><%=c.getResdate() %></span>
-                                    <% if(sid!=null && (sid.equals("admin") || sid.equals(c.getAuthor()))) { %>
-                                    <a href="javascript:delComment('<%=c.getQno() %>', '<%=c.getCno() %>')" class="del">삭제</a>
-                                    <% } %>
-                                </div>
-                                <div class="comment-content"><%=c.getContent() %></div>
-                            </td>
-                        </tr>
+                        <textarea name="content" placeholder="댓글을 입력하세요..." rows="5"></textarea>
+                        <%
+                            } else {
+                        %>
+                        <textarea placeholder="댓글 쓰기 권한이 없습니다. 로그인 하시겠습니까?" rows="5" onclick="redirectToLogin()"></textarea>
                         <%
                             }
                         %>
-                    </table>
-                    <%
-                        boolean isLoggedIn = sid != null;
-                    %>
-                    <form action="/comment/addCommentPro.jsp" method="post" class="comment-form">
-                        <div class="comment-input">
-                            <%
-                                if(isLoggedIn) {
-                            %>
-                            <textarea name="content" placeholder="댓글을 입력하세요..." rows="5"></textarea>
-                            <%
-                                } else {
-                            %>
-                            <textarea placeholder="댓글 쓰기 권한이 없습니다. 로그인 하시겠습니까?" rows="5" onclick="redirectToLogin()"></textarea>
-                            <%
-                                }
-                            %>
-                            <input type="hidden" name="qno" id="qno" value="<%=qno %>">
-                        </div>
-                        <div class="comment-submit">
-                            <% if (isLoggedIn) { %>
-                            <input type="submit" class="comment-write" value="댓글 작성">
-                            <% }  %>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </div>
+                        <input type="hidden" name="qno" id="qno" value="<%=qno %>">
+                    </div>
+                    <div class="comment-submit">
+                        <% if (isLoggedIn) { %>
+                        <input type="submit" class="comment-write" value="댓글 작성">
+                        <% }  %>
+                    </div>
+                </form>
+            </div>
+        </section>
     </div>
 </div>
 <%@ include file="../footer.jsp"%>
