@@ -21,7 +21,7 @@
     <style>
         /* 본문 영역 스타일 */
 
-        .contents { clear:both; min-height:800px;
+        .contents { clear:both; min-height:100vh;
             background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
@@ -37,7 +37,6 @@
             width:1200px; margin: 0 auto; text-align: right; color:#fff;
             padding-top: 28px; padding-bottom: 28px; }
         .breadcrumb a { color:#fff; }
-        .frm { clear:both; width:1200px; margin:0 auto; padding-top: 80px; }
 
         .tb1 { width:800px; margin:50px auto; }
         .tb1 th { width:150px; line-height:32px; padding-top:8px; padding-bottom:8px;

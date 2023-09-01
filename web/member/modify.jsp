@@ -86,7 +86,7 @@
             width:1200px; margin: 0 auto; text-align: right; color:#fff;
             padding-top: 28px; padding-bottom: 28px; }
         .breadcrumb a { color:#fff; }
-        .frm { clear:both; width:1200px; margin:0 auto; padding-top: 80px; }
+        .frm { clear:both; width:1200px; margin:0 auto; /* padding-top: 80px; */ }
 
         .tb1 { width:500px; margin:0 auto; }
         .tb1 td { width:500px; line-height: 48px; padding-top:24px; padding-bottom:24px; }

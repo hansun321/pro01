@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .contents { clear:both; height:1500px;
+        .contents { clear:both; min-height:100vh;
             background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
-        .page { clear:both; width: 100vw; height: 100vh; position:relative; }
+        .page { clear:both; width: 100vw; height: auto; position:relative; }
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }
@@ -36,7 +36,6 @@
             width:1200px; margin: 0 auto; text-align: right; color:#fff;
             padding-top: 28px; padding-bottom: 28px; }
         .breadcrumb a { color:#fff; }
-        .frm { clear:both; width:1200px; margin:0 auto; padding-top: 80px; }
 
         .tb1 { width:800px; margin:50px auto; }
         .tb1 th { width:150px; line-height:32px; padding-top:12px; padding-bottom:12px;
