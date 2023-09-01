@@ -6,7 +6,7 @@
 }
 
 body, html {
-    width: 100%; height: 100% ;
+    width: 100%;
     font-family: 'Noto Sans KR';
     overflow-x: hidden;
     -ms-overflow-style: none;
@@ -36,18 +36,8 @@ img {
 }
 
 .wrap {
-    /*clear: both;
-    width: 100%;*/
-    height: auto;
-    min-height: 100%;
-    padding-bottom: 220px;
-}
-
-footer{
-    height: 220px;
-    /*transform : translateY(-100%);*/
-    position: relative;
-    margin-top: -220px;
+    clear: both;
+    width: 100%;
 }
 
 .wrap::after {

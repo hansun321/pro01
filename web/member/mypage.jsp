@@ -154,8 +154,8 @@
             </div>
         </section>
     </div>
-</div>
 <%@ include file="../footer.jsp" %>
+</div>
     <script>
         function withdraw(memId) {
             var flag = confirm("정말로 탈퇴하시겠습니까?");
