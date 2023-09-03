@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>오시는길</title>
     <%@ include file="../head.jsp" %>
 
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
@@ -37,9 +37,12 @@
         .breadcrumb a { color:#fff; }
     </style>
     <link rel="stylesheet" href="../ft.css">
-    <link rel="stylesheet" type="text/css" href="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.css">
+    <%--<link rel="stylesheet" type="text/css" href="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.css">--%>
     <style>
         body { background:white; }
+
+        .maparea { margin-top: 30px; }
+
         #kk-map {
             position: relative;
             bottom: 10px;
@@ -63,6 +66,7 @@
     <script type="text/javascript" src="http://dmaps.daum.net/map_js_init/v3.js"></script>
     <script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U03/cssjs/jquery/jquery-1.11.0.js"></script>
     <script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U0301/cssjs/JSON-js/fc535e9cc8/json2.min.js"></script>
+    <link rel="stylesheet" href="../ft.css">
 </head>
 <body>
 <div class="wrap">
