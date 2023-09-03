@@ -23,7 +23,7 @@
     }
 
     try {
-        String sql = "insert into weekcrew(name, email, content, content2) values (?,?,?,?)";
+        String sql = "insert into crew(name, email, content, content2) values (?,?,?,?)";
         pstmt = conn.prepareStatement(sql);
         pstmt.setString(1, name);
         pstmt.setString(2, email);

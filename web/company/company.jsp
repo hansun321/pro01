@@ -276,7 +276,7 @@
                         <section class="container0">
                             <div class="img10">
                                 <p class="img10_tit"> 3️⃣ 국가고사 최신경향 관리 </p>
-                                <img src="../employment/images/img_exam.jpg" alt="" class="img20"/>
+                                <img src="/employment/images/img_exam.jpg" alt="" class="img20"/>
                             </div>
                             <div class="txt10">
                                 <div class="info_list0">

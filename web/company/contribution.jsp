@@ -128,19 +128,19 @@
                 <div class="inner">
                     <span>우리 아이들의 행복한 내일을 위해 kiwe가 끊임없는 노력을 하겠습니다.</span>
                         <div class="img-area">
-                            <img src="../employment/images/img_contribution1.jpg" alt="week 도서 기증">
+                            <img src="/employment/images/img_contribution1.jpg" alt="week 도서 기증">
                             <p>✅ 해외아동 도서 및 교육 지원</p>
                         </div>
                         <div class="img-area">
-                            <img src="../employment/images/img_contribution4.jpg" alt="천재교육 도서 기증 &amp; 학습봉사 발대식">
+                            <img src="/employment/images/img_contribution4.jpg" alt="천재교육 도서 기증 &amp; 학습봉사 발대식">
                             <p>✅ kiwe 도서 기증</p>
                         </div>
                         <div class="img-area">
-                            <img src="../employment/images/img_contribution2.jpg" alt="">
+                            <img src="/employment/images/img_contribution2.jpg" alt="">
                             <p>✅ 대한교육협회 지원</p>
                         </div>
                         <div class="img-area">
-                            <img src="../employment/images/img_contribution3.jpg" alt="">
+                            <img src="/employment/images/img_contribution3.jpg" alt="">
                             <p>✅ 지역사회 교육 후원</p>
                         </div>
                 </div>
