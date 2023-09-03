@@ -26,7 +26,6 @@
         faq.setFno(rs.getInt("fno"));
         faq.setQuestion(rs.getString("question"));
         faq.setAnswer(rs.getString("answer"));
-        faq.setCnt(rs.getInt("cnt"));
         faqList.add(faq);
     }
     con.close(rs, pstmt, conn);
@@ -83,7 +82,8 @@
         .tb1 .item4 { width:15%; text-align: center; }
 
         .btn_group p {text-align: center;   line-height:3.6; }
-        .qnalist li { padding-top:8px; padding-bottom:8px; line-height: 2; }
+        .qnalist { font-size: 18px; }
+        .qnalist li { fpadding-top:8px; padding-bottom:8px; line-height: 2; }
         .qnalist li .ans { padding: 16px;  background-color: #f1f1f1; }
         .ans { display:none; }
         .que:after { content:"▼"; padding-left: 36px;}
@@ -105,19 +105,18 @@
             <section class="page" id="page1">
                 <div class="page_wrap">
                     <h2 class="page_tit">자주하는질문</h2>
-
-
                     <ul class="qnalist">
-                        <% for (Faq f : faqList) { %>
+                        <%
+                            int num = 0;
+                            for (Faq f : faqList) {
+                        %>
                         <li>
-                            <div class="que"><%=f.getQuestion() %>
+                            <div class="que">[<%=++num %>] <%=f.getQuestion() %>
                             </div>
                             <div class="ans"><%=f.getAnswer() %>
                             </div>
                         </li>
                         <% } %>
-
-
                     </ul>
                     <script>
                         $(document).ready(function () {

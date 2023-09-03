@@ -4,7 +4,6 @@ public class Faq {
     private int fno;
     private String question;
     private String answer;
-    private int cnt;
 
     public int getFno() {
         return fno;
@@ -30,21 +29,12 @@ public class Faq {
         this.answer = answer;
     }
 
-    public int getCnt() {
-        return cnt;
-    }
-
-    public void setCnt(int cnt) {
-        this.cnt = cnt;
-    }
-
     @Override
     public String toString() {
         return "Faq{" +
                 "fno=" + fno +
                 ", question='" + question + '\'' +
                 ", answer='" + answer + '\'' +
-                ", cnt=" + cnt +
                 '}';
     }
 }
