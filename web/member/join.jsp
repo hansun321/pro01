@@ -22,12 +22,12 @@
     <style>
         /* 본문 영역 스타일 */
 
-        .contents { clear:both; min-height: 850px;
+        .contents { clear:both; min-height: 100vh;
             background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
-        .page { clear:both; width: 100vw; height: 100vh; position:relative; }
+        .page { clear:both; width: 100vw; height: auto; position:relative; }
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap { clear:both; width: 1200px; height: auto; margin:0 auto; }

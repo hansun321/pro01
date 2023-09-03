@@ -109,7 +109,7 @@
             float:left; margin-right: 20px; margin-top: 10px; }
         .inbtn:last-child { float:right; }
 
-        .comment-form { margin: 5px 160px;
+        .comment-form { margin: 20px 160px;
             border: 1px solid #ccc; padding: 10px; border-radius: 5px; width: 900px;
         }
         .comment-form textarea {
@@ -136,6 +136,11 @@
             margin-top: 7px; padding: 5px; background-color: #8CC63E; color: #fff;
             border: none;
         }
+
+        .edit {
+            margin-left: 15px; font-size: 12px; cursor: pointer;
+        }
+        .edit:hover { text-decoration: underline; }
 
         .del {
             margin-left: 15px; font-size: 12px; color: #f44336; cursor: pointer;
@@ -234,6 +239,7 @@
                                 <span><%=c.getAuthor() %></span>
                                 <span class="comment-date"><%=c.getResdate() %></span>
                                 <% if(sid!=null && (sid.equals("admin") || sid.equals(c.getAuthor()))) { %>
+                                <a href="javascript:editComment('<%=c.getQno() %>', '<%=c.getCno() %>')" class="edit">수정</a>
                                 <a href="javascript:delComment('<%=c.getQno() %>', '<%=c.getCno() %>')" class="del">삭제</a>
                                 <% } %>
                             </div>
@@ -274,6 +280,17 @@
 </div>
 <%@ include file="../footer.jsp"%>
     <script>
+        function editComment(qno, cno) {
+            /*var flag = confirm("댓글을 수정하시겠습니까?");
+            if (flag) {
+                location.href = "/comment/editCommentPro.jsp?qno=" + qno + "&cno=" + cno;
+            }*/
+            var newContent = prompt("댓글을 수정하세요:", ""); // 사용자로부터 수정할 내용 입력 받음
+            if (newContent !== null) { // 취소 버튼이 아니면
+                location.href = "/comment/editCommentPro.jsp?qno=" + qno + "&cno=" + cno + "&content=" + newContent;
+            }
+        }
+
         function delComment(qno, cno) {
             var flag = confirm("댓글을 삭제하시겠습니까?");
             if (flag) {

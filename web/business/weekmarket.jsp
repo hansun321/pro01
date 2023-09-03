@@ -200,7 +200,7 @@
                     </section>
                     <section>
                         <div class="img1">
-                            <p class="img1_tit">Weekmarket은 week에서 제공되는 모든 상품을 구매할 수 있는 회사로서 준비중입니다.</p>
+                            <p class="img1_tit">Weekmarket은 kiwe에서 제공되는 모든 상품을 구매할 수 있는 회사로서 준비중입니다.</p>
                         </div>
                     </section>
                 </div>

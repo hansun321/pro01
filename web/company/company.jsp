@@ -68,6 +68,13 @@
         container:last-child {
             clear: both;
         }
+        .intro1 {
+            margin-left: 105px;
+        }
+        .intro2 {
+            margin-left: 50px;
+        }
+
         .inner {
             margin: 30px auto;
             width: 1200px;
@@ -202,7 +209,7 @@
                 </div>
                 <div class="row">
                     <section class="container">
-                        <span>kiwe란?</span>
+                        <span class="intro1">kiwe란?</span>
                     </section>
                     <section>
                         <div class="img1">
@@ -227,7 +234,7 @@
                     </section>
                     <section class="container">
                         <div id="scroll" class="img2">
-                            <span>kiwe 스토리</span>
+                            <span class="intro2">kiwe 스토리</span>
                         </div>
                     </section>
                     <div class="row0">
