@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white"> <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
 
 ## 🔧 기능 구현
-### Member <hr>
+### Member
 #### 회원가입
 - 회원 약관에 동의 시 회원가입 가능
 - 아이디 중복 체크 완료 후에 가입 가능
@@ -24,12 +24,12 @@
 - 비밀번호는 보안 상 변경 불가
 - 자진 회원탈퇴 기능 구현
 <img src="img/mypage.jpg" alt="mypage">
-### Company <hr>
+### Company
 #### 회사소개
 - 정적 콘텐츠로 kiwe에 대한 소개 페이지
 - 'kiwe란' 페이지 내에서 마우스 스크롤 또는 상단 버튼 클릭을 통해 kiwe story로 이동 가능
 <img src="img/company.jpg" alt="company">
-### 고객센터 <hr>
+### 고객센터
 #### 공지사항
 - Board 테이블에서 공지사항 리스트를 불러와 출력
 - 로그인을 하지 않아도 공지사항을 열람할 수 있음
@@ -47,7 +47,7 @@
 - 글ㆍ댓글 수정/삭제는 그 글ㆍ댓글의 작성자 또는 관리자만 가능함
 - 로그인을 하지 않고 댓글창을 클릭한 경우 자동으로 로그인 화면으로 이동함
 <img src="img/qna.jpg" alt="qna">
-### 인재채용 <hr>
+### 인재채용
 #### 지원하기
 - 이력서 지원폼으로 지원하기 버튼 클릭 시 crew 테이블에 INSERT
 #### 복리후생
