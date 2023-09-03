@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>윜(Week)</title>
+    <title>키위(kiwe)</title>
     <%@ include file="head.jsp" %>
 
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->

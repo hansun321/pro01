@@ -9,13 +9,6 @@
                 <li><a href="">이용약관</a></li>
                 <li><a href="">이메일무단수집거부</a></li>
             </ul>
-            <ul class="snb">
-                <li class="item1"><a href="">소셜1</a></li>
-                <li class="item2"><a href="">소셜2</a></li>
-                <li class="item3"><a href="">소셜3</a></li>
-                <li class="item4"><a href="">소셜4</a></li>
-                <li class="item5"><a href="">소셜5</a></li>
-            </ul>
         </nav>
         <script>
             function loc() {
