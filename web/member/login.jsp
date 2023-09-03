@@ -68,10 +68,10 @@
                     <table class="tb1">
                         <tbody>
                         <tr>
-                            <td><input type="text" name="id" id="id" class="indata" placeholder="아이디 입력" autofocus required/></td>
+                            <td><input type="text" name="id" id="id" class="indata" placeholder="아이디" autofocus required/></td>
                         </tr>
                         <tr>
-                            <td><input type="password" name="pw" id="pw" class="indata" placeholder="패스워드 입력" required/></td>
+                            <td><input type="password" name="pw" id="pw" class="indata" placeholder="비밀번호" required/></td>
                         </tr>
                         <tr>
                             <td>

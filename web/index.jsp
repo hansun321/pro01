@@ -76,7 +76,7 @@
         }
 
         .img_box li.item2 .bg_box {
-            background-image: url("./images/boy.jpg");
+            background-image: url("./images/mom.jpg");
         }
 
         .img_box li .vs_tit1 {
@@ -333,8 +333,143 @@
             top: 148px;
         }
 
-    </style>
+        /*
+        추가
+         */
+        .main-section {
+            position: relative;
+            width: 100%;
+        }
 
+        .main-section__inner {
+            position: relative;
+            margin: 0 auto;
+            width: 1440px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1280px) {
+            .main-section__inner {
+                padding-left: 1.56vw;
+                padding-right: 1.56vw;
+                width: auto;
+            }
+        }
+
+        .main-section__2 {
+            min-height: 160px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1280px) {
+            .main-section__2 {
+                margin-top: 3.13vw;
+            }
+        }
+
+        .main-section__2 .main-event__wrap {
+            margin: 0 auto;
+        }
+
+        .main-section__2 .main-event__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main-section__2 .main-event__list:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        .main-section__2 .main-event__item {
+            display: block;
+            opacity: 0;
+            position: relative;
+            -webkit-transform: translateY(100px);
+            -moz-transform: translateY(100px);
+            transform: translateY(100px);
+            transition: all .8s ease-in-out;
+            width: 440px;
+            margin-left: 40px;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1280px) {
+            .main-section__2 .main-event__item {
+                width: 32.81vw;
+                margin-left: 1.56vw;
+            }
+        }
+
+        .main-section__2 .main-event__item:first-child {
+            margin-left: 0;
+        }
+
+        .main-section__2 .main-event__link {
+            z-index: 0;
+            display: table;
+            overflow: hidden;
+            position: relative;
+            top: 0;
+            transition: top .3s ease-in-out;
+            padding: 0 40px;
+            width: 440px;
+            height: 160px;
+            border-radius: 30px;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1280px) {
+            .main-section__2 .main-event__link {
+                padding-left: 3.13vw;
+                padding-right: 3.13vw;
+                width: 30.94vw;
+                height: 9.38vw;
+            }
+        }
+
+        .main-section__2 .main-event__link:focus, .main-section__2 .main-event__link:hover {
+            top: -20px;
+            box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1280px) {
+            .main-section__2 .main-event__link:focus, .main-section__2 .main-event__link:hover {
+                top: -1.56vw;
+            }
+        }
+
+        .main-section__2 .main-event__image {
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 160px;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1280px) {
+            .main-section__2 .main-event__image {
+                height: 12.5vw;
+            }
+        }
+
+        .main-section__2.active .main-event__item {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .main-section__2.active .main-event__item:nth-child(2) {
+            transition-delay: .2s;
+        }
+
+        .main-section__2.active .main-event__item:nth-child(3) {
+            transition-delay: .2s;
+        }
+    </style>
     <link rel="stylesheet" href="ft.css">
 </head>
 <body>
@@ -349,13 +484,13 @@
                     <input type="radio" name="vs_ra" id="vs_ra1" class="vs_ra" checked>
                     <div class="bg_box"></div>
                     <h2 class="vs_tit1">우리 아이들의 <br> 행복한 내일을 위해<br>
-                        <strong>Week가 <br> 끊임 없는 노력을 하겠습니다.</strong></h2>
+                        <strong>kiwe가 <br> 끊임 없는 노력을 하겠습니다.</strong></h2>
                 </li>
                 <li class="item2">
                     <input type="radio" name="vs_ra" id="vs_ra2" class="vs_ra">
                     <div class="bg_box"></div>
                     <h2 class="vs_tit2">아이들의 성적으로 <br>확실하게 이어지는<br>
-                        <strong>Week만의 맞춤형 교육으로 <br> 초대합니다!</strong>
+                        <strong>kiwe만의 맞춤형 교육으로 <br> 초대합니다!</strong>
                     </h2>
                 </li>
             </ul>
@@ -415,6 +550,33 @@
             });
         </script>
     </div>
+    <section class="main-section main-section__2 active">
+        <div class="main-section__inner">
+            <div class="main-event__wrap">
+                <ul class="main-event__list setBannerWrap">
+                    <li class="main-event__item">
+                        <a href="./company/company.jsp" class="main-event__link">
+                            <div class="main-event__image" aria-hidden="true">
+                                <img src="./images/intro.png" alt="회사소개">
+                            </div>
+                        </a>
+                    </li><li class="main-event__item">
+                    <a href="./qna/qnaList.jsp" class="main-event__link">
+                        <div class="main-event__image" aria-hidden="true">
+                            <img src="./images/center.png" alt="고객센터">
+                        </div>
+                    </a>
+                </li><li class="main-event__item">
+                    <a href="./employment/weekcrew.jsp" class="main-event__link">
+                        <div class="main-event__image" aria-hidden="true">
+                            <img src="./images/recruitment.png" alt="인재채용">
+                        </div>
+                    </a>
+                </li></ul>
+            </div>
+        </div>
+    </section>
+
 </div>
 <%@ include file="footer.jsp" %>
 </body>

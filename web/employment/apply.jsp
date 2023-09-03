@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>윜크루 되기</title>
+    <title>지원하기</title>
 
     <%@ include file="../head.jsp" %>
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
@@ -68,12 +68,12 @@
     </header>
     <div class="contents" id="contents">
         <div class="breadcrumb">
-            <p><a href="">HOME</a>  &gt <span>인재채용</span> &gt <span>윜크루 되기</span> </p>
+            <p><a href="">HOME</a>  &gt <span>인재채용</span> &gt <span>지원하기</span> </p>
         </div>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">윜크루 되기</h2>
-                <form action="/weekcrew/applyPro.jsp" method="post">
+                <h2 class="page_tit">지원하기</h2>
+                <form action="/employment/applyPro.jsp" method="post">
                     <table class="tb1">
                         <thead>
                             <th><label for="name">이름</label></th>
@@ -97,7 +97,7 @@
                     </table>
                     <table class="tb1">
                         <thead>
-                            <th><label for="content">1. 윜크루가 되고 싶은 지원동기를 서술하시오. (500자 내외)</label></th>
+                            <th><label for="content">1. kiwe에 지원하는 동기를 서술하시오. (500자 내외)</label></th>
                         </thead>
                         <tbody>
                             <td>
@@ -107,7 +107,7 @@
                     </table>
                     <table class="tb1">
                         <thead>
-                            <th><label for="content2">2. 윜크루가 된 후 포부를 서술하시오. (500자 내외)</label></th>
+                            <th><label for="content2">2. kiwe에 입사한 후 포부를 서술하시오. (500자 내외)</label></th>
                         </thead>
                         <tbody>
                         <td>

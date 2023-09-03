@@ -187,11 +187,11 @@
     </header>
     <div class="contents" id="contents">
         <div class="breadcrumb">
-            <p><a href="">HOME</a> &gt <span>사업영역</span> &gt <span>윜마켓</span> </p>
+            <p><a href="">HOME</a> &gt <span>사업영역</span> &gt <span>윜스토어</span> </p>
         </div>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">윜마켓</h2>
+                <h2 class="page_tit">윜스토어</h2>
                 <div class="row">
                     <section class="container">
                         <span>W</span>

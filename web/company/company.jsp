@@ -187,36 +187,34 @@
     </header>
     <div class="contents" id="contents">
         <div class="breadcrumb">
-            <p><a href="">HOME</a> &gt <span>회사소개</span> &gt <span>윜이란?</span> </p>
+            <p><a href="">HOME</a> &gt <span>회사소개</span> &gt <span>kiwe란?</span> </p>
         </div>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">윜이란?</h2>
+                <h2 class="page_tit">kiwe란?</h2>
                 <div class="inner">
                     <div class="btn-group tab-group type3">
-                        <a ui-sref="textbook01" ui-sref-opts="{reload: true}" class="button active scroll_move" href="/company/company.jsp">윜이란?</a>
-                        <a ui-sref="textbook02" ui-sref-opts="{reload: true}" class="button btn_tab" href="#scroll">윜 스토리</a>
+                        <a ui-sref="textbook01" ui-sref-opts="{reload: true}" class="button active scroll_move" href="/company/company.jsp">kiwe란?</a>
+                        <a ui-sref="textbook02" ui-sref-opts="{reload: true}" class="button btn_tab" href="#scroll">kiwe 스토리</a>
                         <a ui-sref="textbook03" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/contribution.jsp">사회공헌</a>
                         <!-- <a href="#" class="button btn_tab">XR</a> -->
                     </div>
                 </div>
                 <div class="row">
                     <section class="container">
-                        <span>W</span>
-                        <span>EE</span>
-                        <span>K CAN DO IT!</span>
+                        <span>kiwe란?</span>
                     </section>
                     <section>
                         <div class="img1">
-                            <p class="img1_tit">Week은 교육 서비스에
+                            <p class="img1_tit">kiwe는 교육 서비스에
                                 최적화된 교육·출판 전문 기업입니다.</p>
-                            <img src="/weekcrew/images/img_company.jpg" alt="회사 소개" />
+                            <img src="/employment/images/img_company.jpg" alt="회사 소개" />
                         </div>
                         <div class="txt1">
                             <div class="info_list">
                                 <dl class="info_wrap">
                                     <dd class="info_sub_text">
-                                        Week은 유아부터 고등까지 모든 연령대의 교육 콘텐츠 전문 기업입니다.
+                                        kiwe는 유아부터 고등까지 모든 연령대의 교육 콘텐츠 전문 기업입니다.
                                         10년간 교육 콘텐츠업계 매출 1위를 차지하고 있으며,
                                         연간 5,000여 종에 이르는 유아동·초·중·고등 학습 교재를 발간하고 있습니다.
 
@@ -229,16 +227,14 @@
                     </section>
                     <section class="container">
                         <div id="scroll" class="img2">
-                            <span>W</span>
-                            <span id="scroll2">EE</span>
-                            <span>K STORY</span>
+                            <span>kiwe 스토리</span>
                         </div>
                     </section>
                     <div class="row0">
                         <section class="container0">
                             <div class="img10">
                                 <p class="img10_tit"> 1️⃣ AI 학습 관련 연구 개발</p>
-                                <img src="/weekcrew/images/img_ai.jpg" alt="" class="img20"/>
+                                <img src="/employment/images/img_ai.jpg" alt="" class="img20"/>
                             </div>
                             <div class="txt10">
                                 <div class="info_list0">
@@ -257,7 +253,7 @@
                         <section class="container0">
                             <div class="img10">
                                 <p class="img10_tit"> 2️⃣ 교과용 도서 연구 및 검정</p>
-                                <img src="/weekcrew/images/img_bookd.jpg" alt="" class="img20"/>
+                                <img src="/employment/images/img_bookd.jpg" alt="" class="img20"/>
                             </div>
                             <div class="txt10">
                                 <div class="info_list0">
@@ -273,7 +269,7 @@
                         <section class="container0">
                             <div class="img10">
                                 <p class="img10_tit"> 3️⃣ 국가고사 최신경향 관리 </p>
-                                <img src="/weekcrew/images/img_exam.jpg" alt="" class="img20"/>
+                                <img src="../employment/images/img_exam.jpg" alt="" class="img20"/>
                             </div>
                             <div class="txt10">
                                 <div class="info_list0">

@@ -35,7 +35,7 @@
         script += "history.go(-1)";
         script += "</script>";
         if(cnt >0){
-            response.sendRedirect("/weekcrew/applyRS.jsp");
+            response.sendRedirect("/employment/applyRS.jsp");
         } else {
             out.print(script);
         }

@@ -24,14 +24,14 @@
     pstmt.setInt(1, bno);
     int cnt = pstmt.executeUpdate();
 
-    if ( cnt >0 ){
-        if (mode==0) {
-            response.sendRedirect("/board/boardList.jsp");
-        } else {
+    if (cnt > 0) {
+        if (mode == 0) {
             response.sendRedirect("/member/admin/adminBoard.jsp");
+        } else {
+            response.sendRedirect("/board/boardList.jsp");
         }
     } else {
-        response.sendRedirect("/board/getBoard.jsp?bno="+bno);
+        response.sendRedirect("/board/getBoard.jsp?bno=" + bno);
     }
 
     con.close(pstmt,conn);

@@ -31,34 +31,34 @@
     <nav class="gnb">
         <ul class="menu">
             <li class="item1">
-                <a href="/company/company.jsp" class="dp1">회사소개</a>
+                <a href="../company/company.jsp" class="dp1">회사소개</a>
                 <ul class="sub">
-                    <li><a href="/company/company.jsp">'윜'이란?</a></li>
-                    <li><a href="/company/company.jsp?#scroll">'윜' 스토리</a></li>
-                    <li><a href="/company/contribution.jsp">사회공헌</a></li>
+                    <li><a href="../company/company.jsp">kiwe란?</a></li>
+                    <li><a href="../company/company.jsp?#scroll">kiwe 스토리</a></li>
+                    <li><a href="../company/company.jsp">사회공헌</a></li>
                 </ul>
             </li>
             <li class="item2">
-                <a href="/business/weekly.jsp" class="dp1">사업영역</a>
+                <a href="../business/weekly.jsp" class="dp1">사업영역</a>
                 <ul class="sub">
-                    <li><a href="/business/weekly.jsp">위클리</a></li>
-                    <li><a href="/business/weekend.jsp">위켄드</a></li>
-                    <li><a href="/business/weekmarket.jsp">윜마켓</a></li>
+                    <li><a href="../business/weekly.jsp">위클리</a></li>
+                    <li><a href="../business/weekend.jsp">위켄드</a></li>
+                    <li><a href="../business/weekmarket.jsp">윜스토어</a></li>
                 </ul>
             </li>
             <li class="item3">
-                <a href="/faq/faqList.jsp" class="dp1">고객센터</a>
+                <a href="../faq/faqList.jsp" class="dp1">고객센터</a>
                 <ul class="sub">
-                    <li><a href="/board/boardList.jsp">공지사항</a></li>
-                    <li><a href="/faq/faqList.jsp">자주하는 질문</a></li>
-                    <li><a href="/qna/qnaList.jsp">1:1 문의</a></li>
+                    <li><a href="../board/boardList.jsp">공지사항</a></li>
+                    <li><a href="../faq/faqList.jsp">자주하는 질문</a></li>
+                    <li><a href="../qna/qnaList.jsp">1:1 문의</a></li>
                 </ul>
             </li>
             <li class="item4">
-                <a href="/weekcrew/apply.jsp" class="dp1">인재채용</a>
+                <a href="../employment/apply.jsp" class="dp1">인재채용</a>
                 <ul class="sub">
-                    <li><a href="/weekcrew/apply.jsp">윜크루 되기</a></li>
-                    <li><a href="/weekcrew/weekcrew.jsp">윜크루 되면</a></li>
+                    <li><a href="../employment/apply.jsp">지원하기</a></li>
+                    <li><a href="../employment/weekcrew.jsp">복리후생</a></li>
                 </ul>
             </li>
         </ul>
