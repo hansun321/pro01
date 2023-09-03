@@ -35,7 +35,7 @@
     }
 
     pstmt.close();
-    sql="select * from weekcrew order by wid desc";
+    sql="select * from crew order by wid desc";
     pstmt = conn.prepareStatement(sql);
     rs = pstmt.executeQuery();
 

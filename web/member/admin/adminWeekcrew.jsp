@@ -17,7 +17,7 @@
         System.out.println("DB 연결 성공");
     }
 
-    String sql = "select * from weekcrew order by wid desc";
+    String sql = "select * from crew order by wid desc";
     pstmt = conn.prepareStatement(sql);
     rs = pstmt.executeQuery();
 

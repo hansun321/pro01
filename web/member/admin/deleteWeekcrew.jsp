@@ -18,7 +18,7 @@
         System.out.println("DB 연결 성공");
     }
 
-    String sql = "delete from weekcrew where wid=?";
+    String sql = "delete from crew where wid=?";
     pstmt = conn.prepareStatement(sql);
     pstmt.setInt(1, wid);
     int cnt = pstmt.executeUpdate();
