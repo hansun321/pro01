@@ -194,7 +194,7 @@
                         </table>
                     </div>
                     <div class="weekcrew">
-                        <h3 class="wc">윜크루 지원 현황</h3>
+                        <h3 class="wc">지원 현황</h3>
                         <table class="tb1" id="myTable2">
                             <thead>
                             <tr>

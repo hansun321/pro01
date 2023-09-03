@@ -141,11 +141,11 @@
         </header>
         <div class="contents" id="contents">
             <div class="breadcrumb">
-                <p><a href="">HOME</a> &gt; <span>관리자 페이지</span> &gt; <span>윜크루 지원 관리</span></p>
+                <p><a href="">HOME</a> &gt; <span>관리자 페이지</span> &gt; <span> 지원서 관리</span></p>
             </div>
             <section class="page" id="page1">
                 <div class="page_wrap">
-                    <h2 class="page_tit">윜크루 지원 관리</h2>
+                    <h2 class="page_tit"> 지원서 관리</h2>
                     <div class="weekcrew">
                         <table class="tb1" id="myTable2">
                             <thead>

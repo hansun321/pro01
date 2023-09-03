@@ -167,7 +167,7 @@
                 <p><a href="">HOME</a> &gt; <span>관리자 페이지</span></p>
             </div>
             <section>
-                <h2 class="page_tit">WEEK 관리자 페이지</h2>
+                <h2 class="page_tit">관리자 페이지</h2>
                 <div class="inner">
                     <div class="wrap">
                         <a class="wrap-a" href="/member/admin/admin.jsp">
@@ -180,7 +180,7 @@
                             📰 언론보도 관리
                         </a>
                         <a class="wrap-a" href="/member/admin/adminWeekcrew.jsp">
-                            📩 윜크루 지원 관리
+                            📩  지원서 관리
                         </a>
                     </div>
                 </div>

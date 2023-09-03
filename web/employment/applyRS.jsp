@@ -65,7 +65,7 @@
     <div class="contents" id="contents">
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">윜크루 지원 완료!</h2>
+                <h2 class="page_tit"> 지원 완료!</h2>
                 <div class="btn">
                     <a href="/" class="inbtn">메인으로</a>
                 </div>
