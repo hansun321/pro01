@@ -35,7 +35,7 @@
                 <ul class="sub">
                     <li><a href="/company/company.jsp">kiwe란?</a></li>
                     <li><a href="/company/company.jsp?#scroll">kiwe 스토리</a></li>
-                    <li><a href="/company/company.jsp">사회공헌</a></li>
+                    <li><a href="/company/contribution.jsp">사회공헌</a></li>
                 </ul>
             </li>
             <li class="item2">

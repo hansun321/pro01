@@ -111,8 +111,8 @@
                 <h2 class="page_tit">사회공헌</h2>
                 <div class="inner1">
                     <div class="btn-group tab-group type3">
-                        <a ui-sref="textbook01" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/company.jsp">윜이란?</a>
-                        <a ui-sref="textbook02" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/company.jsp#scroll">윜 스토리</a>
+                        <a ui-sref="textbook01" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/company.jsp">kiwe란?</a>
+                        <a ui-sref="textbook02" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/company.jsp#scroll">kiwe 스토리</a>
                         <a ui-sref="textbook03" ui-sref-opts="{reload: true}" class="button active scroll_move" href="/company/contribution.jsp">사회공헌</a>
                         <!-- <a href="#" class="button btn_tab">XR</a> -->
                     </div>
