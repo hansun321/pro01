@@ -1,10 +1,41 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
+<%@ page import="java.text.*" %>
+<%@ page import="com.kiwe.dto.Masscom" %>
+<%@ page import="com.kiwe.db.*" %>
+<%@ page import="java.util.Date" %>
+<%@ include file="../encoding.jsp" %>
+
+<%
+    Connection conn = null;
+    PreparedStatement pstmt = null;
+    ResultSet rs = null;
+
+    DBC con = new MariaDBCon();
+    conn = con.connect();
+    String sql = "select * from masscom order by mno desc";
+    pstmt = conn.prepareStatement(sql);
+    rs = pstmt.executeQuery();
+
+    List<Masscom> masscomList = new ArrayList<>();
+    while(rs.next()){
+        Masscom mc = new Masscom();
+        mc.setMno(rs.getInt("mno"));
+        mc.setTitle(rs.getString("title"));
+        mc.setLink(rs.getString("link"));
+        mc.setResdate(rs.getString("resdate"));
+        masscomList.add(mc);
+    }
+    con.close(rs, pstmt, conn);
+%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사회공헌</title>
+    <title>언론보도</title>
 
     <%@ include file="../head.jsp" %>
     <!-- 스타일 초기화 : reset.css 또는 normalize.css -->
@@ -20,12 +51,12 @@
     <link rel="stylesheet" href="../hd.css">
     <style>
         /* 본문 영역 스타일 */
-        .contents { clear:both; height:1700px;
+        .contents { clear:both; min-height:100vh;
             background-image: url("../images/bk.jpg");
             background-repeat: no-repeat; background-position:center -250px; }
         .contents::after { content:""; clear:both; display:block; width:100%; }
 
-        .page { clear:both; width: 100vw; height: 100vh; position:relative; }
+        .page { clear:both; width: 100vw; height: auto; position:relative; }
         .page::after { content:""; display:block; width: 100%; clear:both; }
 
         .page_wrap { clear:both; width: 1500px; height: auto; margin:0 auto; }
@@ -36,6 +67,20 @@
             width:1200px; margin: 0 auto; text-align: right; color:#fff;
             padding-top: 28px; padding-bottom: 28px; }
         .breadcrumb a { color:#fff; }
+
+        .tb1 { width:800px; margin:50px auto; }
+        .tb1 th { line-height:32px; padding-top:8px; padding-bottom:8px;
+            border-top:1px solid #8CC63E; border-bottom:1px solid #8CC63E;
+            background-color:#8CC63E; color:#fff; }
+        .tb1 td {line-height:32px; padding-top:8px; padding-bottom:8px;
+            border-bottom:1px solid #8CC63E;
+            padding-left: 14px; border-top:1px solid #8CC63E; }
+
+        .tb1 .item1 { width:80%; text-align: left; text-indent: 48px; }
+        .tb1 .item2 { width:20%; }
+
+
+
         .inner1 {
             margin: 30px auto;
             width: 1200px;
@@ -96,58 +141,61 @@
     </style>
 
     <link rel="stylesheet" href="../ft.css">
+    <link rel="stylesheet" href="../jquery.dataTables.css">
+    <script src="../jquery.dataTables.js"></script>
 </head>
 <body>
-<div class="wrap">
+<div class="container">
+    <div class="wrap">
     <header class="hd" id="hd">
-        <%@ include file="../header.jsp"%>
+        <%@ include file="../header.jsp" %>
     </header>
     <div class="contents" id="contents">
         <div class="breadcrumb">
-            <p><a href="">HOME</a>  &gt <span>회사소개</span> &gt <span>사회공헌</span> </p>
+            <p><a href="/">HOME</a> &gt; <a href="">윜 News</a> &gt; <span>언론보도</span></p>
         </div>
         <section class="page" id="page1">
             <div class="page_wrap">
-                <h2 class="page_tit">사회공헌</h2>
+                <h2 class="page_tit">언론보도</h2>
                 <div class="inner1">
                     <div class="btn-group tab-group type3">
                         <a ui-sref="textbook01" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/company.jsp">kiwe란?</a>
                         <a ui-sref="textbook02" ui-sref-opts="{reload: true}" class="button btn_tab" href="/company/company.jsp#scroll">kiwe 스토리</a>
-                        <a ui-sref="textbook03" ui-sref-opts="{reload: true}" class="button active scroll_move" href="/company/contribution.jsp">사회공헌</a>
+                        <a ui-sref="textbook03" ui-sref-opts="{reload: true}" class="button active scroll_move" href="/company/masscomList.jsp">언론보도</a>
                         <!-- <a href="#" class="button btn_tab">XR</a> -->
                     </div>
                 </div>
-                <script>
-                    $(document).ready(function($) {
-                        $(".scroll_move").click(function(event){
-                            event.preventDefault();
-                            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-                        });
-                    });
-                </script>
-                <div class="inner">
-                    <span>우리 아이들의 행복한 내일을 위해 kiwe가 끊임없는 노력을 하겠습니다.</span>
-                        <div class="img-area">
-                            <img src="/employment/images/img_contribution1.jpg" alt="week 도서 기증">
-                            <p>✅ 해외아동 도서 및 교육 지원</p>
-                        </div>
-                        <div class="img-area">
-                            <img src="/employment/images/img_contribution4.jpg" alt="천재교육 도서 기증 &amp; 학습봉사 발대식">
-                            <p>✅ kiwe 도서 기증</p>
-                        </div>
-                        <div class="img-area">
-                            <img src="/employment/images/img_contribution2.jpg" alt="">
-                            <p>✅ 대한교육협회 지원</p>
-                        </div>
-                        <div class="img-area">
-                            <img src="/employment/images/img_contribution3.jpg" alt="">
-                            <p>✅ 지역사회 교육 후원</p>
-                        </div>
-                </div>
+
+                <table class="tb1" id="myTable">
+                    <thead>
+                    <th class="item1">제목</th>
+                    <th class="item2">작성일</th>
+                    </thead>
+
+                    <tbody>
+                    <%
+                        SimpleDateFormat ymd = new SimpleDateFormat("yyyy-MM-dd");
+                        for(Masscom mc:masscomList) {
+                            Date d = ymd.parse(mc.getResdate());  //날짜데이터로 변경
+                            String date = ymd.format(d);    //형식을 포함한 문자열로 변경
+                    %>
+                    <tr>
+                        <td class="item1">
+                            <%-- 6. 로그인한 사용자만 제목 부분의 a요소에 링크 중 bno 파라미터(쿼리스트링)으로 상세보기를 요청 가능--%>
+                            <a href="<%=mc.getLink() %>"><%=mc.getTitle() %></a>
+                        </td>
+                        <td class="item2"><%=date %></td>
+                    </tr>
+                    <%
+                        }
+                    %>
+                    </tbody>
+                </table>
             </div>
         </section>
     </div>
-<%@ include file="../footer.jsp" %>
+    <%@ include file="../footer.jsp" %>
+    </div>
 </div>
 </body>
 </html>

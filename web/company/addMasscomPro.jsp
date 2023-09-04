@@ -28,7 +28,7 @@
     script += "history.go(-1)";
     script += "</script>";
     if (cnt > 0) {
-        response.sendRedirect("/masscom/masscomList.jsp");
+        response.sendRedirect("/company/masscomList.jsp");
     } else {
         out.print(script);
     }

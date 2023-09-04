@@ -70,7 +70,7 @@
         <section class="page" id="page1">
             <div class="page_wrap">
                 <h2 class="page_tit">언론보도 등록</h2>
-                <form action="/masscom/addMasscomPro.jsp" method="post">
+                <form action="/company/addMasscomPro.jsp" method="post">
                     <table class="tb1">
                         <tbody>
                         <tr>
