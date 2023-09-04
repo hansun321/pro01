@@ -31,7 +31,7 @@
 #### 회사소개
 - 정적 콘텐츠로 kiwe에 대한 소개 페이지
 - 'kiwe란' 페이지 내에서 마우스 스크롤 또는 상단 버튼 클릭을 통해 kiwe story로 이동 가능
-<img src="img/company.jpg" alt="company">
+<img src="img/comp.jpg" alt="company">
 
 ### 고객센터
 #### 공지사항
@@ -44,7 +44,7 @@
 #### 자주하는 질문
 - Faq 테이블에서 자주 하는 질문 리스트를 불러와 출력
 - 로그인을 하지 않아도 자주하는 질문을 열람할 수 있음
-- <img src="img/faq.jpg" alt="faq">
+<img src="img/faq.jpg" alt="faq">
 
 #### 1:1 문의
 - Qna 테이블에서 리스트를 불러와 출력
@@ -67,16 +67,25 @@
 #### 회원정보 관리
 - member 테이블에서 회원 정보를 SELECT
 - 관리자는 원하는 회원을 강제 탈퇴 처리할 수 있음
-#### 공지사항 ㅁ관리
+<img src="img/mem.jpg" alt="mem">
+
+#### 공지사항 관리
 - board 테이블에서 글 목록을 SELECT
 - 관리자는 원하는 글을 수정 또는 삭제할 수 있음
 - 글 수정 또는 삭제 후 공지사항 관리 페이지로 redirection
-- 
+<img src="img/noti.jpg" alt="noti">
+
+#### 언론보도 관리
+- masscom 테이블에서 기사 자료 SELECT
+- 관리자는 원하는 기사를 삭제할 수 있음
+- 삭제 후 언론보도 관리페이지로 redirection
+<img src="img/mas.jpg" alt="mas">
+
 #### 지원서 관리
 - crew 테이블에서 지원 목록을 SELECT
 - 관리자는 원하는 지원서를 삭제할 수 있음
 - 지원서 삭제 후 지원서 관리 페이지로 redirection
-<img src="img/applys.jpg" alt="applys">
+<img src="img/app.jpg" alt="app">
 
 #### 탈퇴 및 강퇴
 - 모든 회원은 마이페이지에서 회원 탈퇴 가능
